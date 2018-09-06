@@ -2,7 +2,8 @@ var express = require('express');
 var bodyParser = require('body-parser');
 const path = require('path');
 
-var {mongoose} = require('./db/mongoose')
+var {mongoose} = require('./db/mongoose');
+var {connect} = require('./db/mongoose');
 var {Course} = require('./model/course');
 var {User} = require('./model/user');
 var {Student} = require('./model/student');
@@ -18,8 +19,9 @@ var port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(express.static(frontendPath));
 
-app.listen(port, () => {
+app.listen(port, async () => {
     console.log('started on port ' + port);
+    await connect();
 });
 
 app.post('/users', (req, res) => {
