@@ -52,6 +52,9 @@ var courseSchema = new Schema({
         type: Boolean, 
         default: 0
     }, 
+    hash: {
+        type: Number
+    },
     fullName: {
         type: String
     }

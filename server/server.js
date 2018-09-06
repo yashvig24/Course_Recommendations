@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 const path = require('path');
 
 var {mongoose} = require('./db/mongoose')
-var {Course} = require('./model/course');
+var {Course} = require('./model/course 2');
 var {User} = require('./model/user');
 var {Student} = require('./model/student');
 var {ObjectID} = require('mongodb');
