@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 //const mongoUrl = process.env.MONGODB_URI || "mongodb://localhost:27017/Recom";
-const mongoUrl = "mongodb://heroku_bxxsh88c:t2a8n0y2a@ds223812.mlab.com:23812/heroku_bxxsh88c";
+const mongoUrl = "mongodb://heroku_s8qg5dhm:T2a8n0y2@@ds247830.mlab.com:47830/heroku_s8qg5dhm";
 
 mongoose.connect(mongoUrl, { useNewUrlParser: true});
 
